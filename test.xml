@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+
+    <parameter name="param1" value="10"></parameter>
+    <parameter name="param2" value="10"></parameter>
+    <test name = "test2">
+        <classes>
+            <class name="testNg.TestNg_Demo2"></class>
+        </classes>
+    </test>
+
+    <test name="testFactory">
+        <classes>
+            <class name="testNg.SimpleTest" />
+        </classes>
+    </test>
+    <test name="Test" group-by-instances="true">
+        <classes>
+            <class name="testNg.FactoryTest">
+            </class>
+        </classes>
+    </test> <!-- Test -->
+<listeners>
+    <listener class-name="testNg.FactoryTest"></listener>
+</listeners>
+</suite>

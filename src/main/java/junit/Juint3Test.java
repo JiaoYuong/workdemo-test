@@ -1,3 +1,5 @@
+package junit;
+
 import ArrayHandle.ArrayHandle;
 import junit.framework.TestCase;
 import org.junit.Assert;
